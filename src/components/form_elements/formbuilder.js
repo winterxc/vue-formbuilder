@@ -12,12 +12,12 @@ import TimePicker from '@/components/form_elements/FormElementTimePicker'
 import DatePicker from '@/components/form_elements/FormElementDatePicker'
 import DatetimePicker from '@/components/form_elements/FormElementDatetimePicker'
 import Rating from '@/components/form_elements/FormElementRating'
-import Button from '@/components/form_elements/FormElementButton'
-import Carousel from '@/components/form_elements/FormElementCarousel'
-import Upload from '@/components/form_elements/FormElementUpload'
+//import Button from '@/components/form_elements/FormElementButton'
+//import Carousel from '@/components/form_elements/FormElementCarousel'
+//import Upload from '@/components/form_elements/FormElementUpload'
 import ElSwitch from '@/components/form_elements/FormElementSwitch'
 import TableComponent from '@/components/form_elements/FormElementTable'
-import HtmlComponent from '@/components/form_elements/FormElementHtml'
+//import HtmlComponent from '@/components/form_elements/FormElementHtml'
 
 import Elements from '@/components/form_elements/Elements'
 import Properties from '@/components/form_elements/properties/Properties'
@@ -39,12 +39,12 @@ export const FormBuilder = new Vue({
     DatePicker,
     DatetimePicker,
     Rating,
-    Button,
-    Carousel,
-    Upload,
+    //Button,
+    //Carousel,
+    //Upload,
     ElSwitch,
     TableComponent,
-    HtmlComponent
+    //HtmlComponent
   },
   data() {
     return {
@@ -251,6 +251,7 @@ export const FormBuilder = new Vue({
           activeText: '',
           inActiveText: ''
         },
+        /*
         {
           fieldType: 'Button',
           text: 'Button',
@@ -284,6 +285,7 @@ export const FormBuilder = new Vue({
           span: 24,
           uploadURL: 'https://jsonplaceholder.typicode.com/posts/'
         },
+        //*/
         {
           fieldType: 'TableComponent',
           text: 'Table',
@@ -310,6 +312,7 @@ export const FormBuilder = new Vue({
             address: 'No. 189, Grove St, Los Angeles'
           }]
         },
+        /*
         {
           fieldType: 'HtmlComponent',
           text: 'Html',
@@ -319,6 +322,7 @@ export const FormBuilder = new Vue({
           htmlContent: '<h3>Hello World</h3>',
           advancedOptions: ''
         }
+        //*/
       ],
 
       sortElementOptions: {

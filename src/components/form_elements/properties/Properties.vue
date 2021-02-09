@@ -236,8 +236,6 @@ export default {
     }
   },
   mounted() {
-    console.log("activeField ->", this.activeField)
-    console.log("activeField.hasOwnProperty('span') ->", this.activeField.hasOwnProperty('span'))
   },
   methods: {
     deleteOption(option, index) {
@@ -278,7 +276,6 @@ export default {
         if (valid) {
           alert('submit!');
         } else {
-          console.log('error submit!!');
           return false;
         }
       });

@@ -17,7 +17,8 @@ import App from './App'
 // Lodash
 // ----------------
 import VueLodash from 'vue-lodash'
-Vue.use(VueLodash)
+import lodash from 'lodash'
+Vue.use(VueLodash, {lodash: lodash})
 
 // ================
 // Use Vue Router

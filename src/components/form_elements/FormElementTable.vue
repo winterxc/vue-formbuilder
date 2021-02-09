@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     handleCurrentChange(row) {
-      console.log('row', row)
       row.edit = !row.edit;
     },
     handleDelete() {

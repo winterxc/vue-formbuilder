@@ -90,8 +90,6 @@ export default {
     };
   },
   mounted() {
-    console.log("form ->", this.forms)
-    console.log("activeField ->", this.activeField)
   },
   components: FormBuilder.$options.components,
   methods: {
@@ -102,8 +100,6 @@ export default {
       FormBuilder.cloneElement(index, field, form)
     },
     editElementProperties(field) {
-      console.log("form ->", this.forms)
-      console.log("activeField ->", this.activeField)
       FormBuilder.editElementProperties(field)
     },
     addSection() {

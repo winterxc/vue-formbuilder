@@ -27,7 +27,6 @@ axios.interceptors.response.use((res) => {
   }
   return res;
 }, (error) => {
-  console.log(error.status);
   if (error.response) {
     if (error.response.status == 401) {
       this.$message.error('Oops, this is a error.');
@@ -35,7 +34,6 @@ axios.interceptors.response.use((res) => {
     }
   } else {
     // Something happened in setting up the request that triggered an Error
-    console.log('Error', error.message);
   }
   return reject(error);
 });
@@ -46,10 +44,8 @@ export function fetch(url, params) {
       .then(response => {
         if (response) resolve(response.data);
       }, err => {
-        console.log(err);
       })
       .catch((error) => {
-        console.log(error);
         reject(error)
       })
   })
